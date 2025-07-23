@@ -1,0 +1,12 @@
+body {
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+	text-align: center;
+	background-color: dodgerblue;
+	color: white;
+	padding: 20px;
+	margin: 10px;
+	border-radius: 20px;
+}
