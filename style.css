@@ -1,8 +1,8 @@
 body {
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: white;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 	background-color: aliceblue;
+	color: white;
 }
 
 header {
@@ -16,9 +16,9 @@ header {
 
 h2 {
 	text-align: center;
-	margin: 30px 10px;
+	margin: 30px 10px 20px 10px;
 	background-color: darkblue;
-	padding: 10px;
+	padding: 20px;
 	border-bottom: 2px solid black;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -26,11 +26,42 @@ h2 {
 
 .container {
 	display: grid;
-	gap: 5px;
+	grid-template-areas:
+		"header header"
+		"img1 img2"
+		"footer footer";
+	gap: 10px;
 	padding: 10px;
+	margin: 10px;
+	border-radius: 20px;
 	background-color: lightblue;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .responsive-img {
-	width: 40%;
+	width: 95%;
+	border-radius: 5px;
+}
+
+.header {
+	grid-area: header;
+	text-align: center;
+	background-color: rgba(93, 120, 200, 0.9);
+	border-radius: 10px;
+}
+
+.img1 {
+	grid-area: img1;
+}
+
+.img2 {
+	grid-area: img2;
+}
+
+.footer {
+	grid-area: footer;
+	text-align: center;
+	background-color: rgba(93, 120, 200, 0.9);
+	padding: 10px;
+	border-radius: 10px;
 }
